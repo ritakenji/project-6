@@ -31,7 +31,8 @@ export default function CreatePlacePage() {
     }
   }
 
-  /*   images: {
+  /*
+  images: {
     remotePatterns: [
       {
         protocol: "https",
@@ -40,7 +41,7 @@ export default function CreatePlacePage() {
       },
       {
         protocol: "https",
-        hostname: "external-content.duckduckgo.com",
+        hostname: "external-content.duckduckgo.com", <------ !!!!!!!!!!!! add this to next-config.js because the img src is not added to permitions
         port: "",
       },
     ],
