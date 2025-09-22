@@ -40,7 +40,7 @@ export default function DetailsPage() {
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
   async function deletePlace() {
-    const confirmed = confirm("are you sure you want to delete the place?");
+    const confirmed = confirm("are you sure you want to delete the place?"); //const confirmed = alert --> message, nothing happens, user can simply close window --> check how to do wrapping
 
     if (!confirmed) return;
 
