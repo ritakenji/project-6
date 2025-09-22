@@ -40,7 +40,9 @@ export default function DetailsPage() {
   if (!isReady || isLoading || error) return <h2>Loading...</h2>;
 
   async function deletePlace() {
-    console.log("Deleting place ...");
+    const confirmed = confirm("are you sure you want to delete the place?");
+
+    if (!confirmed) return;
 
     const response = await fetch(`/api/places/${id}`, {
       method: "DELETE",
